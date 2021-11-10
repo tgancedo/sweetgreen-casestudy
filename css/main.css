@@ -1,0 +1,29 @@
+:root {
+  --font-sans-serif: Roboto, sans-serif;
+  --font-serif: Lustria, serif;
+  --black: #0E150E;
+  --cream: #F4F3E7;
+  --tan: #E8DCC6;
+  --kale-green: #00473C;
+  --sage: #A9C1A9;
+  --light-sage: #D8E5D6;
+  --lime: #E6FE54;
+  --mid-gray: #8C8C82;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--black);
+}
