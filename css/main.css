@@ -18,12 +18,61 @@ html {
   box-sizing: inherit;
 }
 
+/**
+* Typography
+*/
+
 body {
   font-family: var(--font-sans-serif);
   color: var(--black);
   font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-sans-serif);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 4rem;
+  letter-spacing: -.1rem;
+  line-height: 3.5rem;
+}
+
+h4 {
+  font-family: var(--font-serif);
+  color: var(--mid-gray);
+  font-size: 3rem;
 }
 
 a {
   color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/**
+* .component
+*/
+
+.component img {
+  max-width: initial;
+}
+
+.component__img {
+  border: 1px solid var(--mid-gray);
+  overflow-x: auto;
+}
+
+.component__code {
+  border: 1px solid var(--mid-gray);
 }
