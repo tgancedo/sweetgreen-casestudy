@@ -26,6 +26,7 @@ body {
   font-family: var(--font-sans-serif);
   color: var(--black);
   font-size: 1.5rem;
+  font-weight: 100;
   line-height: 1.8rem;
 }
 
@@ -53,11 +54,72 @@ h4 {
 
 a {
   color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+/**
+* buttons
+*/
+
+.button {
+  color: var(--lime);
+  background: var(--kale-green);
+  padding: 2px 18px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: inline-block;
+  font-size: 1rem;
+  border: 1px solid var(--kale-green);
+}
+
+.button:hover {
+  color: var(--black);
+  background: none;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  border: 1px solid var(--black);
+}
+
+.button--primary {
+  color: var(--kale-green);
+  background: var(--lime);
+  padding: 8px 60px;
+  transition: all .3s ease-in-out;
+  border: 1px solid var(--lime);
+}
+
+.button--primary:hover {
+  color: var(--lime);
+  background: var(--kale-green);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  border: 1px solid var(--kale-green);
+}
+
+.button--secondary {
+  color: var(--black);
+  background: none;
+  padding: 8px 60px;
+  border: 1px solid var(--black);
+  transition: all .3s ease-in-out;
+}
+
+.button--secondary:hover {
+  color: var(--light-sage);
+  background: var(--black);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
 }
 
 /**
@@ -75,4 +137,8 @@ img {
 
 .component__code {
   border: 1px solid var(--mid-gray);
+}
+
+.component__name {
+  font-size: 2rem;
 }

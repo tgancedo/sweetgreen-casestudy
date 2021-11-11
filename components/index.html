@@ -4,45 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Components | sweetgreen</title>
+    <title>Web Components | sweetgreen</title>
     <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <h1>Web Components</h1>
 
-    <h2>Typography Defaults</h2>
+    <section class="page-section">
+      <h2>Typography</h2>
 
-    <article class="component">
-      <h3 class="component__name">body</h3>
-      <div class="component__img">
-        <img 
-          srcset="img/app__desc.png 2x"
-          src="img/app__desc.png" 
-          alt="body copy">
-      </div>
-      <div class="component__code">
-        <p>
-          Our freshly designed app is a dream home for all things sweetgreen. Order delivery or pickup, find personalized promos, and access exclusive menu items
-        </p>
-        <p>
-          Tap in to eat with the seasons, explore new flavors, and find the sweet spot between good-for-you and just-plain-good.
-        </p>
-      </div>
-    </article>
+      <article class="component">
+        <h3 class="component__name">Body</h3>
+        <div class="component__img">
+          <img srcset="img/app__desc.png 2x" src="img/app__desc.png" alt="body copy">
+        </div>
+        <div class="component__code">
+          <p>
+            Our freshly designed app is a dream home for all things sweetgreen. Order delivery or pickup, find personalized promos, and access exclusive menu items
+          </p>
+          <p>
+            Tap in to eat with the seasons, explore new flavors, and find the sweet spot between good-for-you and just-plain-good.
+          </p>
+        </div>
+      </article>
 
-    <article class="component">
-      <h3 class="component__name">headings (h1, h2, ...)</h3>
-      <div class="component__img">
-        <img srcset="img/app__pre-heading.png 2x" src="img/app__pre-heading.png" alt="body copy">
-        <img srcset="img/app__heading.png 2x" src="img/app__heading.png" alt="body copy">
-        <img srcset="img/menu__heading--inactive.png 2x" src="img/menu__heading--inactive.png" alt="body copy">
-      </div>
-      <div class="component__code">
-        <h2>Inside The App</h2>
-        <h3>Explore our new sweetgreen app</h3>
-        <h4>Warm Bowls</h4>
-      </div>
-    </article>
+      <article class="component">
+        <h3 class="component__name">H2, H3, H4</h3>
+        <div class="component__img">
+          <img srcset="img/app__pre-heading.png 2x" src="img/app__pre-heading.png" alt="h2">
+          <img srcset="img/app__heading.png 2x" src="img/app__heading.png" alt="h3">
+          <img srcset="img/menu__heading--inactive.png 2x" src="img/menu__heading--inactive.png" alt="h4">
+        </div>
+        <div class="component__code">
+          <h2>Inside The App</h2>
+          <h3>Explore our new sweetgreen app</h3>
+          <h4>Warm Bowls</h4>
+        </div>
+      </article>
+
+      <article class="component">
+        <h3 class="component__name">Links</h3>
+        <div class="component__code">
+          <a href="#!">Careers</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="atoms" class="page-section">
+      <h2>Atoms</h2>
+      
+      <h3 class="component__name">Buttons</h3>
+
+      <article>
+        <div class="component__img">
+          <img srcset="img/nav-bar__button.png 2x" src="img/nav-bar__button.png" alt="nav button">
+          <img srcset="img/hero__button.png 2x" src="img/hero__button.png" alt="hero button">
+          <img srcset="img/exclusives__button.png 2x" src="img/exclusives__button.png" alt="nav button">
+        </div>
+        <div class="component__code">
+          <p><a href="#!" class="button button">Order</a></p>
+          <p><a href="#!" class="button button--primary">Order Now &#8594;</a></p>
+          <p><a href="#!" class="button button--secondary">Order Now</a></p>
+        </div>
+      </article>
+
+    </section>
   </body>
 </html>
