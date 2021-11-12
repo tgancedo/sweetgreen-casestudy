@@ -11,17 +11,17 @@
   </head>
   <body>
     <header class="sidebar">
-      <div>
+      <div class="sidebar__heading">
         <img src="img/Sweetgreen_logo.svg">
       </div>
-      <nav>
-        <h2>Typography</h2>
+      <nav class="sidebar__nav">
+        <a href="#typography"><h2>Typography</h2></a>
         <ul>
-          <li><a href="#home">Body</a></li>
-          <li><a href="#news">H2,H3,H4</a></li>
-          <li><a href="#contact">Links</a></li>
-          <li><a href="#about">Buttons</a></li>
-          <li><a href="#about">Carousel Buttons</a></li>
+          <li><a href="#body">Body</a></li>
+          <li><a href="#headings">H2,H3,H4</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#carousel-buttons">Carousel Buttons</a></li>
         </ul>
       </nav>
     </header>
@@ -29,14 +29,14 @@
     <main class="container component__main">
       <h1>Web Design System</h1>
       <p>
-        This is a component library study of the <a href="https://sweetgreen.com">sweetgreen</a> website.
+        This is a component library study of the <a href="https://sweetgreen.com" target="_blank">sweetgreen</a> website.
       </p>
 
       <section id="typography" class="page-section">
-        <h2>Typography</h2>
+        <h2 class="component__heading">Typography</h2>
 
         <article class="component">
-          <h3 class="component__name">Body</h3>
+          <h3 id="body" class="component__name">Body</h3>
           <div class="component__img">
             <img srcset="img/app__desc.png 2x" src="img/app__desc.png" alt="body copy">
           </div>
@@ -51,7 +51,7 @@
         </article>
 
         <article class="component">
-          <h3 class="component__name">H2, H3, H4</h3>
+          <h3 id="headings" class="component__name">H2, H3, H4</h3>
           <div class="component__img">
             <img srcset="img/app__pre-heading.png 2x" src="img/app__pre-heading.png" alt="h2">
             <img srcset="img/app__heading.png 2x" src="img/app__heading.png" alt="h3">
@@ -65,7 +65,7 @@
         </article>
 
         <article class="component">
-          <h3 class="component__name">Links</h3>
+          <h3 id="links" class="component__name">Links</h3>
           <div class="component__code">
             <a href="#!">Careers</a>
           </div>
@@ -73,11 +73,11 @@
       </section>
 
       <section id="atoms" class="page-section">
-        <h2>Atoms</h2>
+        <h2 class="component__heading">Atoms</h2>
         
         <h3 class="component__name">Buttons</h3>
 
-        <article>
+        <article class="component">
           <div class="component__img">
             <img srcset="img/nav-bar__button.png 2x" src="img/nav-bar__button.png" alt="nav button">
             <img srcset="img/hero__button.png 2x" src="img/hero__button.png" alt="hero button">
@@ -90,9 +90,9 @@
           </div>
         </article>
 
-        <h3 class="component__name">Carousel Buttons</h3>
+        <h3 id="carousel-buttons" class="component__name">Carousel Buttons</h3>
 
-        <article>
+        <article class="component">
           <div class="component__img">
             <img srcset="img/hero__button--carousel-left.png 2x" src="img/hero__button--carousel-left.png" alt="left button">
             <img srcset="img/hero__button--carousel-right.png 2x" src="img/hero__button--carousel-right.png" alt="right button">

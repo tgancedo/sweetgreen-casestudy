@@ -18,9 +18,7 @@ html {
   box-sizing: inherit;
 }
 
-/**
-* Typography
-*/
+/*------------ typography and image ------------*/
 
 body {
   font-family: var(--font-sans-serif);
@@ -35,15 +33,21 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+h1 {
+  line-height: 3rem;
+}
+
 h2 {
   font-size: 1rem;
   text-transform: uppercase;
+  padding: 0;
 }
 
 h3 {
   font-size: 4rem;
   letter-spacing: -.1rem;
   line-height: 3.5rem;
+  margin-top: 0;
 }
 
 h4 {
@@ -66,9 +70,7 @@ img {
   display: block;
 }
 
-/**
-* buttons
-*/
+/*------------ buttons ------------*/
 
 .button {
   color: var(--lime);
@@ -151,14 +153,16 @@ img {
   border: none;
 }
 
-/**
-* .component
-*/
+/*------------ .component ------------*/
 
 .component__main {
-  margin-left: 300px;
-  padding: 1px 16px;
+  margin-left: 305px;
+  padding: 1px 30px;
   height: 1000px;
+}
+
+.component {
+  margin-bottom: 5rem;
 }
 
 .component img {
@@ -174,33 +178,59 @@ img {
   border: 1px solid var(--mid-gray);
 }
 
-.component__name {
-  font-size: 2rem;
+.component__heading {
+  background: var(--kale-green);
+  color: var(--cream);
+  padding-left: .5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 0;
+  line-height: 2.5rem;
 }
 
-/* The side navigation menu */
+.component__name {
+  font-size: 1.2rem;
+  background: var(--cream);
+  color: var(--black);
+  padding-left: .5rem;
+  letter-spacing: 0;
+  margin: 0;
+  line-height: 2.5rem;
+}
+
+/*------------ side navigation ------------*/
 
 .sidebar {
   margin: 0;
-  padding: 0;
-  width: 280px;
+  padding: 2rem;
+  width: 300px;
   background-color: var(--cream);
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
+.sidebar__heading {
+  padding-bottom: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .sidebar li {
   display: block;
-  padding: 5px;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
-    height: auto;
+    height: 80px;
     position: relative;
   }
-  .sidebar li {float: left;}
+  .sidebar__nav {display: none;}
   .component__main {margin-left: 0;}
 }
