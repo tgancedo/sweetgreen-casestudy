@@ -41,7 +41,6 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0;
-  letter-spacing: 0.1rem;
 }
 
 h3 {
@@ -55,6 +54,11 @@ h4 {
   font-family: var(--font-serif);
   color: var(--mid-gray);
   font-size: 3rem;
+  transition: all .3s ease-in-out;
+}
+
+h4:hover {
+  color: var(--black);
 }
 
 a {
@@ -256,12 +260,20 @@ img {
   list-style: none;
   align-items: center;
   background: var(--cream);
-  justify-content: center;
   text-transform: uppercase;
 }
 
 .nav-bar__container .logo {
   margin: auto;
+}
+
+.nav-bar__container a {
+  margin: auto;
+}
+
+.nav-bar__list {
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .nav-bar__list--left {
@@ -280,4 +292,28 @@ img {
 
 @media screen and (max-width: 700px) {
   .nav-bar__item {display: none;}
+}
+
+/*------------ menu card ------------*/
+
+.menu-card__container {
+  width: 340px;
+}
+
+.menu-card__img {
+  border-radius: 1.25rem;
+  width: 100%;
+}
+
+.menu-card__heading {
+  font-size: 1.5rem;
+}
+
+.menu-card__desc {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.menu-card__link {
+  font-size: 1rem;
 }

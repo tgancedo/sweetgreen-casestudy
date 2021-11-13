@@ -26,53 +26,65 @@
         </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#atoms"><h2>Atoms</h2></a>
-        <ul>
-          <li><a href="#button">.button</a></li>
-          <li><a href="#button-primary">.button--primary</a></li>
-          <li><a href="#button-secondary">.button--secondary</a></li>
-          <li><a href="#carousel-button">.carousel__button</a></li>
-          <li><a href="#carousel-button-circle">.carousel__button--circle</a></li>
-          <li><a href="#icon-square">.icon--square</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#atoms"><h2>Atoms</h2></a>
+          <ul>
+            <li><a href="#button">.button</a></li>
+            <li><a href="#button-primary">.button--primary</a></li>
+            <li><a href="#button-secondary">.button--secondary</a></li>
+            <li><a href="#carousel-button">.carousel__button</a></li>
+            <li><a href="#carousel-button-circle">.carousel__button--circle</a></li>
+            <li><a href="#icon-square">.icon--square</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#nav-bar"><h2>Nav-Bar</h2></a>
-        <ul>
-          <li><a href="#nav-bar">.nav-bar</a></li>
-          <li><a href="#nav-bar-list">.nav-bar__list</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#nav-bar"><h2>Nav-Bar</h2></a>
+          <ul>
+            <li><a href="#nav-bar">.nav-bar</a></li>
+            <li><a href="#nav-bar-list">.nav-bar__list</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#menu-card"><h2>Menu Card</h2></a>
-        <ul>
-          <li><a href="#menu-card">.menu-card</a></li>
-          <li><a href="#menu-card-img">.menu-card__img</a></li>
-          <li><a href="#menu-card-content">.menu-card__content</a></li>
-          <li><a href="#menu-card-tag-left">.menu-card__tag--left</a></li>
-          <li><a href="#menu-card-tag-right">.menu-card__tag--right</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#menu-card"><h2>Menu Card</h2></a>
+          <ul>
+            <li><a href="#menu-card">.menu-card</a></li>
+            <li><a href="#menu-card-img">.menu-card__img</a></li>
+            <li><a href="#menu-card-content">.menu-card__content</a></li>
+            <li><a href="#menu-card-tag-left">.menu-card__tag--left</a></li>
+            <li><a href="#menu-card-tag-right">.menu-card__tag--right</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#latest-card"><h2>Latest Card</h2></a>
-        <ul>
-          <li><a href="#latest-card">.latest-card</a></li>
-          <li><a href="#latest-card-img">.latest-card__img</a></li>
-          <li><a href="#latest-card-content">.latest-card__content</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#latest-card"><h2>Latest Card</h2></a>
+          <ul>
+            <li><a href="#latest-card">.latest-card</a></li>
+            <li><a href="#latest-card-img">.latest-card__img</a></li>
+            <li><a href="#latest-card-content">.latest-card__content</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#newsletter"><h2>Newsletter</h2></a>
-        <ul>
-          <li><a href="#newsletter-form">.newsletter__form</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#newsletter"><h2>Newsletter</h2></a>
+          <ul>
+            <li><a href="#newsletter-form">.newsletter__form</a></li>
+          </ul>
+        </nav>
       </section>
       <section class="side-bar__section">
-        <a href="#footer"><h2>Footer</h2></a>
-        <ul>
-          <li><a href="#footer-marquee">.footer__marquee</a></li>
-          <li><a href="#footer-nav-list">.footer__nav-list</a></li>
-        </ul>
+        <nav class="sidebar__nav">
+          <a href="#footer"><h2>Footer</h2></a>
+          <ul>
+            <li><a href="#footer-marquee">.footer__marquee</a></li>
+            <li><a href="#footer-nav-list">.footer__nav-list</a></li>
+          </ul>
+        </nav>
       </section>
       
     </header>
@@ -203,7 +215,7 @@
 
         <article class="component">
           <div class="component__img">
-            <img srcset="img/nav-bar.png 2x" src="img/nav-bar.png" alt="nav button">  
+            <img srcset="img/nav-bar.png 2x" src="img/nav-bar.png" alt="nav bar">  
           </div>
           <div class="component__code">
             <div class="nav-bar__container">
@@ -214,7 +226,7 @@
                   <li class="nav-bar__item"><a href="#!">Outpost</a></li>
                 </ul>
               </nav>
-              <img class="logo" src="img/Sweetgreen_logo.svg" alt="sweetgreen wordmark">
+              <a href="#!"><img class="logo" src="img/Sweetgreen_logo.svg" alt="sweetgreen wordmark"></a>
               <nav>
                 <ul class="nav-bar__list--right">
                   <li class="nav-bar__item"><a href="#!">Sign In</a></li>
@@ -224,8 +236,74 @@
             </div>
           </div>
         </article>
+
+        <h3 id="nav-bar-list" class="component__name">.nav-bar__list</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/nav-bar__list--left.png 2x" src="img/nav-bar__list--left.png" alt="nav list">  
+          </div>
+          <div class="component__code">
+            <nav>
+              <ul class="nav-bar__list">
+                <li class="nav-bar__item"><a href="#!">Our Menu</a></li>
+                <li class="nav-bar__item"><a href="#!">Our Mission</a></li>
+                <li class="nav-bar__item"><a href="#!">Outpost</a></li>
+              </ul>
+            </nav>
+          </div>
+        </article>
       </section>
   <!---- menu-card ---->
+      <section id="menu-card" class="page-section">
+
+        <h2 class="component__heading">menu card</h2>
+
+        <h3 class="component__name">.menu-card</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/menu-card.png 2x" src="img/menu-card.png" alt="menu card">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container">
+              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+              <h2 class="menu-card__heading">Kale Caesar</h2>
+              <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+              <a class="menu-card__link" href="#!">Order Now &#8594;</a>
+            </div>
+          </div>
+        </article>
+
+        <h3 class="component__name">.menu-card__img</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/menu-card__img.png 2x" src="img/menu-card__img.png" alt="menu card">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container">
+              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+            </div>
+          </div>
+        </article>
+
+        <h3 class="component__name">.menu-card__content</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/menu-card__content.png 2x" src="img/menu-card__content.png" alt="menu card content">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container">
+              <h2 class="menu-card__heading">Kale Caesar</h2>
+              <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+              <a class="menu-card__link" href="#!">Order Now &#8594;</a>
+            </div>
+          </div>
+        </article>
+
+      </section>
   <!---- latest-card ---->
   <!---- newsletter ---->
   <!---- footer ---->    
