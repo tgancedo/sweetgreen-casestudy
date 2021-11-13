@@ -248,8 +248,9 @@ img {
     width: 100%;
     height: 80px;
     position: relative;
+    overflow: hidden;
   }
-  .sidebar__nav {display: none;}
+  .side-bar__section {display: none;}
   .component__main {margin-left: 0;}
 }
 
