@@ -10,33 +10,58 @@
     <link rel="stylesheet" href="../css/normalize.css">
   </head>
   <body>
+  <!------------ side navigation ------------> 
     <header class="sidebar">
       <div class="sidebar__heading">
         <img src="img/Sweetgreen_logo.svg">
       </div>
-      <nav class="sidebar__nav">
-        <a href="#typography"><h2>Typography</h2></a>
+      <section class="side-bar__section">
+        <nav class="sidebar__nav">
+          <a href="#typography"><h2>Typography</h2></a>
+          <ul>
+            <li><a href="#body">body</a></li>
+            <li><a href="#headings">h2,h3,h4</a></li>
+            <li><a href="#links">link</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="side-bar__section">
+        <a href="#atoms"><h2>Atoms</h2></a>
         <ul>
-          <li><a href="#body">Body</a></li>
-          <li><a href="#headings">H2,H3,H4</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#carousel-buttons">Carousel Buttons</a></li>
+          <li><a href="#button">.button</a></li>
+          <li><a href="#button-primary">.button--primary</a></li>
+          <li><a href="#button-secondary">.button--secondary</a></li>
+          <li><a href="#carousel-button">.carousel__button</a></li>
+          <li><a href="#carousel-button-circle">.carousel__button--circle</a></li>
+          <li><a href="#icon-square">.icon--square</a></li>
         </ul>
-      </nav>
+      </section>
+      <section class="side-bar__section">
+        <a href="#nav-bar"><h2>Nav-Bar</h2></a>
+        <ul>
+          <li><a href="#button">.nav-bar</a></li>
+        </ul>
+      </section>
+      <section class="side-bar__section">
+        <a href="#menu-card"><h2>Menu Card</h2></a>
+        <ul>
+          <li><a href="#nav-bar">.nav-bar</a></li>
+        </ul>
+      </section>
+      
     </header>
-
+  <!------------ main content ------------> 
     <main class="container component__main">
       <h1>Web Design System</h1>
       <p>
         This is a component library study of the <a href="https://sweetgreen.com" target="_blank">sweetgreen</a> website.
       </p>
-
+  <!---- typography ----> 
       <section id="typography" class="page-section">
         <h2 class="component__heading">Typography</h2>
 
         <article class="component">
-          <h3 id="body" class="component__name">Body</h3>
+          <h3 id="body" class="component__name">body</h3>
           <div class="component__img">
             <img srcset="img/app__desc.png 2x" src="img/app__desc.png" alt="body copy">
           </div>
@@ -51,7 +76,7 @@
         </article>
 
         <article class="component">
-          <h3 id="headings" class="component__name">H2, H3, H4</h3>
+          <h3 id="headings" class="component__name">h2, h3, h4</h3>
           <div class="component__img">
             <img srcset="img/app__pre-heading.png 2x" src="img/app__pre-heading.png" alt="h2">
             <img srcset="img/app__heading.png 2x" src="img/app__heading.png" alt="h3">
@@ -65,45 +90,81 @@
         </article>
 
         <article class="component">
-          <h3 id="links" class="component__name">Links</h3>
+          <h3 id="links" class="component__name">links</h3>
           <div class="component__code">
             <a href="#!">Careers</a>
           </div>
         </article>
       </section>
-
+  <!---- atoms ----> 
       <section id="atoms" class="page-section">
-        <h2 class="component__heading">Atoms</h2>
+        <h2 class="component__heading">atoms</h2>
         
-        <h3 class="component__name">Buttons</h3>
+        <h3 id="button" class="component__name">.button</h3>
 
         <article class="component">
           <div class="component__img">
-            <img srcset="img/nav-bar__button.png 2x" src="img/nav-bar__button.png" alt="nav button">
-            <img srcset="img/hero__button.png 2x" src="img/hero__button.png" alt="hero button">
-            <img srcset="img/exclusives__button.png 2x" src="img/exclusives__button.png" alt="nav button">
+            <img srcset="img/nav-bar__button.png 2x" src="img/nav-bar__button.png" alt="nav button">  
           </div>
           <div class="component__code">
             <p><a href="#!" class="button button">Order</a></p>
-            <p><a href="#!" class="button button--primary">Order Now &#8594;</a></p>
-            <p><a href="#!" class="button button--secondary">Order Now</a></p>
           </div>
         </article>
 
-        <h3 id="carousel-buttons" class="component__name">Carousel Buttons</h3>
+        <h3 id="button-primary" class="component__name">.button--primary</h3>
 
         <article class="component">
           <div class="component__img">
-            <img srcset="img/hero__button--carousel-left.png 2x" src="img/hero__button--carousel-left.png" alt="left button">
-            <img srcset="img/hero__button--carousel-right.png 2x" src="img/hero__button--carousel-right.png" alt="right button">
-            <img srcset="img/exclusives__button--left.png 2x" src="img/exclusives__button--left.png" alt="unstyled left button">
-            <img srcset="img/exclusives__button--right.png 2x" src="img/exclusives__button--right.png" alt="unstyled right button">
+            <img srcset="img/hero__button.png 2x" src="img/hero__button.png" alt="hero button"> 
           </div>
           <div class="component__code">
-              <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg"></a>
-              <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg"></a>
-              <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--primary" src="img/left-arrow.svg"></a>
-              <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--primary" src="img/right-arrow.svg"></a>
+            <p><a href="#!" class="button button--primary">Order Now &#8594;</a></p>
+          </div>
+        </article>
+
+        <h3 id="button-secondary" class="component__name">.button--secondary</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/exclusives__button.png 2x" src="img/exclusives__button.png" alt="nav button">
+          </div>
+          <div class="component__code">
+            <p><a href="#!" class="button button--secondary">Order Now</a></p>
+          </div>
+        </article>   
+        
+        <h3 id="carousel-button" class="component__name">.carousel__button</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/exclusives__button-carousel.png 2x" src="img/exclusives__button-carousel.png" alt="left button">
+          </div>
+          <div class="component__code">
+            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg"></a>
+            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg"></a>
+          </div>
+        </article>
+
+        <h3 id="carousel-button-circle" class="component__name">.carousel__button--circle</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/hero__button--carousel.png 2x" src="img/hero__button--carousel.png" alt="left button">
+          </div>
+          <div class="component__code">
+            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg"></a>
+            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg"></a>
+          </div>
+        </article>
+
+        <h3 id="icon-square" class="component__name">.icon--square</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/lab__link--tiktok.png 2x" src="img/lab__link--tiktok.png" alt="tiktok icon">
+          </div>
+          <div class="component__code">
+            <a href="#!"><img srcset="img/tiktok-square.svg" class="icon--square" src="img/tiktok-square.svg"></a>
           </div>
         </article>
 

@@ -41,6 +41,7 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0;
+  letter-spacing: 0.1rem;
 }
 
 h3 {
@@ -124,7 +125,7 @@ img {
   transition: all .3s ease-in-out;
 }
 
-.carousel__button {
+.carousel__button--circle {
   background: var(--lime);
   border-radius: 50%;
   padding: .7rem;
@@ -136,11 +137,11 @@ img {
   border: 2px solid var(--lime);
 }
 
-.carousel__button:hover {
+.carousel__button--circle:hover {
   border: 2px solid var(--black);
 }
 
-.carousel__button--primary {
+.carousel__button {
   background: none;
   padding: .8rem;
   border: none;
@@ -149,7 +150,7 @@ img {
   height: 45px;
 }
 
-.carousel__button--primary:hover {
+.carousel__button:hover {
   border: none;
 }
 
@@ -223,6 +224,11 @@ img {
   display: block;
   padding-bottom: 5px;
   margin: 0;
+  font-size: 1.2rem;
+}
+
+.side-bar__section {
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 700px) {
@@ -233,4 +239,13 @@ img {
   }
   .sidebar__nav {display: none;}
   .component__main {margin-left: 0;}
+}
+
+/*------------ atoms ------------*/
+
+.icon--square {
+  background: none;
+  width: 29px;
+  height: 29px;
+  color: var(--black);
 }
