@@ -20,7 +20,7 @@
           <a href="#typography"><h2>Typography</h2></a>
           <ul>
             <li><a href="#body">body</a></li>
-            <li><a href="#headings">h2,h3,h4</a></li>
+            <li><a href="#headings">h2, h3,         h4</a></li>
             <li><a href="#links">link</a></li>
           </ul>
         </nav>
@@ -39,13 +39,39 @@
       <section class="side-bar__section">
         <a href="#nav-bar"><h2>Nav-Bar</h2></a>
         <ul>
-          <li><a href="#button">.nav-bar</a></li>
+          <li><a href="#nav-bar">.nav-bar</a></li>
+          <li><a href="#nav-bar-list">.nav-bar__list</a></li>
         </ul>
       </section>
       <section class="side-bar__section">
         <a href="#menu-card"><h2>Menu Card</h2></a>
         <ul>
-          <li><a href="#nav-bar">.nav-bar</a></li>
+          <li><a href="#menu-card">.menu-card</a></li>
+          <li><a href="#menu-card-img">.menu-card__img</a></li>
+          <li><a href="#menu-card-content">.menu-card__content</a></li>
+          <li><a href="#menu-card-tag-left">.menu-card__tag--left</a></li>
+          <li><a href="#menu-card-tag-right">.menu-card__tag--right</a></li>
+        </ul>
+      </section>
+      <section class="side-bar__section">
+        <a href="#latest-card"><h2>Latest Card</h2></a>
+        <ul>
+          <li><a href="#latest-card">.latest-card</a></li>
+          <li><a href="#latest-card-img">.latest-card__img</a></li>
+          <li><a href="#latest-card-content">.latest-card__content</a></li>
+        </ul>
+      </section>
+      <section class="side-bar__section">
+        <a href="#newsletter"><h2>Newsletter</h2></a>
+        <ul>
+          <li><a href="#newsletter-form">.newsletter__form</a></li>
+        </ul>
+      </section>
+      <section class="side-bar__section">
+        <a href="#footer"><h2>Footer</h2></a>
+        <ul>
+          <li><a href="#footer-marquee">.footer__marquee</a></li>
+          <li><a href="#footer-nav-list">.footer__nav-list</a></li>
         </ul>
       </section>
       
@@ -90,7 +116,7 @@
         </article>
 
         <article class="component">
-          <h3 id="links" class="component__name">links</h3>
+          <h3 id="links" class="component__name">link</h3>
           <div class="component__code">
             <a href="#!">Careers</a>
           </div>
@@ -169,6 +195,40 @@
         </article>
 
       </section>
+  <!---- nav-bar ----> 
+      <section id="nav-bar" class="page-section">
+        <h2 class="component__heading">nav-bar</h2>
+
+        <h3 class="component__name">.nav-bar</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/nav-bar.png 2x" src="img/nav-bar.png" alt="nav button">  
+          </div>
+          <div class="component__code">
+            <div class="nav-bar__container">
+              <nav>
+                <ul class="nav-bar__list--left">
+                  <li class="nav-bar__item"><a href="#!">Our Menu</a></li>
+                  <li class="nav-bar__item"><a href="#!">Our Mission</a></li>
+                  <li class="nav-bar__item"><a href="#!">Outpost</a></li>
+                </ul>
+              </nav>
+              <img class="logo" src="img/Sweetgreen_logo.svg" alt="sweetgreen wordmark">
+              <nav>
+                <ul class="nav-bar__list--right">
+                  <li class="nav-bar__item"><a href="#!">Sign In</a></li>
+                  <a href="#!" class="button button">Order</a>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </article>
+      </section>
+  <!---- menu-card ---->
+  <!---- latest-card ---->
+  <!---- newsletter ---->
+  <!---- footer ---->    
     </main>
   </body>
 </html>
