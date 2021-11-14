@@ -349,3 +349,11 @@ img {
   padding: 4px 0;
 }
 
+.menu-card__tag--right {
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  display: inline-block;
+  padding: 3px 11px;
+  font-size: 1.1rem;
+}
+
