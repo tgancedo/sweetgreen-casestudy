@@ -84,7 +84,7 @@ img {
   display: inline-block;
 }
 
-a:hover .transform-arrow{
+a:hover .transform-arrow {
   transform: translate(5px);
 }
 
