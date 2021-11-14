@@ -189,6 +189,7 @@ img {
 .component__code {
   border: 1px solid var(--black);
   margin-top: -1px;
+  position: relative;
 }
 
 .component__heading {
@@ -299,6 +300,7 @@ img {
 
 .menu-card__container {
   width: 340px;
+  position: relative;
 }
 
 .menu-card__img {
@@ -306,15 +308,44 @@ img {
   width: 100%;
 }
 
+.menu-card__container:before,
+.menu-card__img:before {
+  background: var(--lime);
+  border-radius: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: center;
+  padding: 4px 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-card__container:before {
+  content: "POPULAR";
+}
+
 .menu-card__heading {
   font-size: 1.5rem;
 }
 
 .menu-card__desc {
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 .menu-card__link {
   font-size: 1rem;
 }
+
+.menu-card__tag--left {
+  background: var(--lime);
+  border-radius: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: center;
+  padding: 4px 0;
+}
+
