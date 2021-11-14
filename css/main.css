@@ -75,6 +75,19 @@ img {
   display: block;
 }
 
+.action-link {
+  font-size: 1.1rem;
+}
+
+.transform-arrow {
+  transition: transform .3s ease-in-out;
+  display: inline-block;
+}
+
+a:hover .transform-arrow{
+  transform: translate(5px);
+}
+
 /*------------ buttons and icons ------------*/
 
 .button {
