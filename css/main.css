@@ -429,3 +429,39 @@ a:hover .transform-arrow {
 .latest-card__link:hover {
   text-decoration: none;
 }
+
+/*------------ newsletter ------------*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: .6rem;
+  border: 1px solid var(--black);
+  padding: .6rem;
+}
+
+#email {
+  flex: 1;
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+}
+
+#submit-arrow {
+  border: none;
+  background: none;
+  cursor:pointer;
+}
+
+input::placeholder{
+  color: var(--black);
+}
+
+#email:focus{
+  outline: none;
+  background: var(--light-sage);
+}
+
+.flex-container:focus-within {
+  background: var(--light-sage);
+}
