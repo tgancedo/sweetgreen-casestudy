@@ -44,21 +44,22 @@ h2 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 4.3rem;
   letter-spacing: -.1rem;
-  line-height: 3.5rem;
+  line-height: 4rem;
   margin: 0;
 }
 
-h4 {
+h4, .menu__heading a{
   font-family: var(--font-serif);
   color: var(--mid-gray);
   font-size: 3rem;
   transition: all .3s ease-in-out;
 }
 
-h4:hover {
+h4, .menu__heading a:hover {
   color: var(--black);
+  text-decoration: none;
 }
 
 a {
@@ -312,9 +313,32 @@ a:hover .transform-arrow {
 
 /*------------ menu card ------------*/
 
-.menu-card__container {
+.menu-card__container-p {
   width: 340px;
   position: relative;
+}
+
+.menu__heading {
+  display: flex;
+  background: var(--cream);
+  justify-content: center;
+}
+
+.menu__heading ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.menu__heading li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.menu__content {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--cream);
+  padding: 1.5rem;
 }
 
 .menu-card__img {
@@ -322,7 +346,7 @@ a:hover .transform-arrow {
   width: 100%;
 }
 
-.menu-card__container:before,
+.menu-card__container-p:before,
 .menu-card__img:before {
   background: var(--lime);
   border-radius: 2rem;
@@ -336,8 +360,30 @@ a:hover .transform-arrow {
   left: 20px;
 }
 
-.menu-card__container:before {
+.menu-card__container-p:before {
   content: "POPULAR";
+}
+
+.menu-card__container-g {
+  width: 340px;
+  position: relative;
+}
+
+.menu-card__container-g:before,
+.menu-card__img:before {
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  display: inline-block;
+  padding: 3px 11px;
+  font-size: 1.1rem;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-card__container-g:before {
+  content: "G";
 }
 
 .menu-card__heading {
@@ -369,6 +415,14 @@ a:hover .transform-arrow {
   display: inline-block;
   padding: 3px 11px;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+  .menu__content {
+      display: block;
+      justify-content: center;
+      flex-basis: 100%;
+  }
 }
 
 /*------------ latest card ------------*/
@@ -552,7 +606,7 @@ input::placeholder{
 
 .hero__content {
   position: absolute;
-  width: 400px;
+  width: 500px;
   bottom: 20px;
   left: 20px;
   color: white;

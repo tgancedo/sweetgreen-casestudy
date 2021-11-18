@@ -62,10 +62,12 @@
           <a href="#menu-card"><h2>Menu Card</h2></a>
           <ul>
             <li><a href="#menu-card">.menu-card</a></li>
-            <li><a href="#menu-card-img">.menu-card__img</a></li>
+            <li><a href="#menu-card-img-p">.menu-card__img--p</a></li>
+            <li><a href="#menu-card-img-g">.menu-card__img--g</a></li>
             <li><a href="#menu-card-content">.menu-card__content</a></li>
-            <li><a href="#menu-card-tag-left">.menu-card__tag--left</a></li>
-            <li><a href="#menu-card-tag-right">.menu-card__tag--right</a></li>
+            <li><a href="#menu-card-tag-left">.menu-card__tag--p</a></li>
+            <li><a href="#menu-card-tag-right">.menu-card__tag--g</a></li>
+            <li><a href="#menu-card-section">.menu-card__section</a></li>
           </ul>
         </nav>
       </section>
@@ -323,24 +325,37 @@
             <img srcset="img/menu-card.png 2x" src="img/menu-card.png" alt="menu card">  
           </div>
           <div class="component__code">
-            <div class="menu-card__container">
+            <div class="menu-card__container-p">
               <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
               <h2 class="menu-card__heading">Kale Caesar</h2>
               <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
-              <a class="menu-card__link" href="#!">Order Now <span class="transform-arrow">&#8594;</span></a>
+              <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
             </div>
           </div>
         </article>
 
-        <h3 id="menu-card-img" class="component__name">.menu-card__img</h3>
+        <h3 id="menu-card-img-p" class="component__name">.menu-card__img--p</h3>
 
         <article class="component">
           <div class="component__img">
-            <img srcset="img/menu-card__img.png 2x" src="img/menu-card__img.png" alt="menu card image">  
+            <img srcset="img/menu-card__img--p.png 2x" src="img/menu-card__img--p.png" alt="menu card image">  
           </div>
           <div class="component__code">
-            <div class="menu-card__container">
+            <div class="menu-card__container-p">
               <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+            </div>
+          </div>
+        </article>
+
+        <h3 id="menu-card-img-g" class="component__name">.menu-card__img--g</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/menu-card__img--g.png 2.5x" src="img/menu-card__img--g.png" alt="menu card image">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container-g">
+              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
             </div>
           </div>
         </article>
@@ -355,12 +370,12 @@
             <div>
               <h2 class="menu-card__heading">Kale Caesar</h2>
               <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
-              <a class="menu-card__link" href="#!">Order Now <span class="transform-arrow">&#8594;</span></a>
+              <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
             </div>
           </div>
         </article>
 
-        <h3 id="menu-card-tag-left" class="component__name">.menu-card__tag--left</h3>
+        <h3 id="menu-card-tag-left" class="component__name">.menu-card__tag--p</h3>
 
         <article class="component">
           <div class="component__img">
@@ -373,7 +388,7 @@
           </div>
         </article>
 
-        <h3 id="menu-card-tag-right" class="component__name">.menu-card__tag--right</h3>
+        <h3 id="menu-card-tag-right" class="component__name">.menu-card__tag--g</h3>
 
         <article class="component">
           <div class="component__img">
@@ -385,6 +400,46 @@
             </div>
           </div>
         </article>
+
+        <h3 id="menu-card-section" class="component__name">.menu-card-section</h3>
+
+        <article class="component">
+          <div class="component__img">
+            <img srcset="img/menu.png 2x" src="img/menu.png" alt="hero section">  
+          </div>
+          <div class="component__code">
+            <div class="menu__heading">
+              <nav>
+                <ul>
+                  <li><a href="#!">Salads</a></li>
+                  <li><a href="#!">Warm Bowls</a></li>
+                  <li><a href="#!">Sides</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu__content">
+              <div class="menu-card__container-p">
+                <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+                <h2 class="menu-card__heading">Kale Caesar</h2>
+                <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+                <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+              </div>
+              <div class="menu-card__container-p">
+                <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/3Z3fW9JhznhFDphzlHNmRx/85e7f5e3a7e92d63e5fec70e0336b899/Product_Carousel-Guacamole_Greens.jpg?w=600&q=75" alt="guacamole greens">
+                <h2 class="menu-card__heading">Guacamole Greens</h2>
+                <p class="menu-card__desc">Roasted chicken, avocado, tomatoes, red onions, shredded cabbage, tortilla chips, spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño vinaigrette</p>
+                <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+              </div>
+              <div class="menu-card__container-g">
+                <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
+                <h2 class="menu-card__heading">Buffalo Chicken Bowl</h2>
+                <p class="menu-card__desc">Blackened chicken, pickled carrots + celery, tomatoes, cilantro, blue cheese, za'atar breadcrumbs, shredded kale, chopped romaine, sweetgreen hot sauce, caesar dressing (contains gluten)</p>
+                <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </section>
   <!---- latest-card ---->
       <section id="latest-card" class="page-section">
