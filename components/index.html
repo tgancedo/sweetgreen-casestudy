@@ -10,24 +10,24 @@
     <link rel="stylesheet" href="../css/normalize.css">
   </head>
   <body>
-  <!------------ side navigation ------------> 
+  <!-- side navigation --> 
     <header class="sidebar">
       <div class="sidebar__heading">
-        <img src="img/Sweetgreen_logo.svg">
+        <img src="img/Sweetgreen_logo.svg" alt="sweetgreen logo">
       </div>
       <section class="side-bar__section">
+        <a href="#typography"><h2>Typography</h2></a>
         <nav class="sidebar__nav">
-          <a href="#typography"><h2>Typography</h2></a>
           <ul>
             <li><a href="#body">body</a></li>
-            <li><a href="#headings">h2, h3,         h4</a></li>
+            <li><a href="#headings">h2, h3, h4</a></li>
             <li><a href="#links">link</a></li>
           </ul>
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#atoms"><h2>Atoms</h2></a>
         <nav class="sidebar__nav">
-          <a href="#atoms"><h2>Atoms</h2></a>
           <ul>
             <li><a href="#action-link">.action-link</a></li>
             <li><a href="#button">.button</a></li>
@@ -40,8 +40,8 @@
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#nav-bar"><h2>Nav-Bar</h2></a>
         <nav class="sidebar__nav">
-          <a href="#nav-bar"><h2>Nav-Bar</h2></a>
           <ul>
             <li><a href="#nav-bar">.nav-bar</a></li>
             <li><a href="#nav-bar-list">.nav-bar__list</a></li>
@@ -50,48 +50,48 @@
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#hero-section"><h2>hero section</h2></a>
         <nav class="sidebar__nav">
-          <a href="#hero-section"><h2>hero section</h2></a>
           <ul>
             <li><a href="#hero-section">.hero-section</a></li>
           </ul>
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#menu-card"><h2>Menu Card</h2></a>
         <nav class="sidebar__nav">
-          <a href="#menu-card"><h2>Menu Card</h2></a>
           <ul>
-            <li><a href="#menu-card">.menu-card</a></li>
+            <li><a href="#menu-card-tag-left">.menu-card__tag--p</a></li>
+            <li><a href="#menu-card-tag-right">.menu-card__tag--g</a></li>
             <li><a href="#menu-card-img-p">.menu-card__img--p</a></li>
             <li><a href="#menu-card-img-g">.menu-card__img--g</a></li>
             <li><a href="#menu-card-content">.menu-card__content</a></li>
-            <li><a href="#menu-card-tag-left">.menu-card__tag--p</a></li>
-            <li><a href="#menu-card-tag-right">.menu-card__tag--g</a></li>
+            <li><a href="#menu-card-complete">.menu-card</a></li>
             <li><a href="#menu-card-section">.menu-card__section</a></li>
           </ul>
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#latest-card"><h2>Latest Card</h2></a>
         <nav class="sidebar__nav">
-          <a href="#latest-card"><h2>Latest Card</h2></a>
           <ul>
-            <li><a href="#latest-card">.latest-card</a></li>
             <li><a href="#latest-card-img">.latest-card__img</a></li>
             <li><a href="#latest-card-content">.latest-card__content</a></li>
+            <li><a href="#latest-card">.latest-card</a></li>
           </ul>
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#newsletter"><h2>Newsletter</h2></a>
         <nav class="sidebar__nav">
-          <a href="#newsletter"><h2>Newsletter</h2></a>
           <ul>
             <li><a href="#newsletter-form">.newsletter__form</a></li>
           </ul>
         </nav>
       </section>
       <section class="side-bar__section">
+        <a href="#footer"><h2>Footer</h2></a>
         <nav class="sidebar__nav">
-          <a href="#footer"><h2>Footer</h2></a>
           <ul>
             <li><a href="#footer-marquee">.footer__marquee</a></li>
             <li><a href="#footer-nav-list">.footer__nav-list</a></li>
@@ -100,13 +100,13 @@
       </section>
       
     </header>
-  <!------------ main content ------------> 
+  <!-- main content --> 
     <main class="container component__main">
       <h1>Web Design System</h1>
       <p>
         This is a component library study of the <a href="https://sweetgreen.com" target="_blank">sweetgreen</a> website.
       </p>
-  <!---- typography ----> 
+  <!-- typography --> 
       <section id="typography" class="page-section">
         <h2 class="component__heading">Typography</h2>
 
@@ -130,7 +130,7 @@
           <div class="component__img">
             <img srcset="img/app__pre-heading.png 2x" src="img/app__pre-heading.png" alt="h2">
             <img srcset="img/app__heading.png 2x" src="img/app__heading.png" alt="h3">
-            <img srcset="img/menu__heading--inactive.png 2x" src="img/menu__heading--inactive.png" alt="h4">
+            <img srcset="img/menu__heading--active.png 2x" src="img/menu__heading--active.png" alt="h4">
           </div>
           <div class="component__code">
             <h2>Inside The App</h2>
@@ -146,13 +146,12 @@
           </div>
         </article>
       </section>
-  <!---- atoms ----> 
+  <!-- atoms --> 
       <section id="atoms" class="page-section">
         <h2 class="component__heading">atoms</h2>
 
-        <h3 id="action-link" class="component__name">.action-link</h3>
-
         <article class="component">
+          <h3 id="action-link" class="component__name">.action-link</h3>
           <div class="component__img">
             <img srcset="img/menu-card__link.png 2x" src="img/menu-card__link.png" alt="menu card link">
           </div>
@@ -161,20 +160,18 @@
           </div>
         </article>
         
-        <h3 id="button" class="component__name">.button</h3>
-
         <article class="component">
+          <h3 id="button" class="component__name">.button</h3>
           <div class="component__img">
             <img srcset="img/nav-bar__button.png 2x" src="img/nav-bar__button.png" alt="nav button">  
           </div>
           <div class="component__code">
             <p><a href="#!" class="button button">Order</a></p>
           </div>
-        </article>
-
-        <h3 id="button-primary" class="component__name">.button--primary</h3>
+        </article> 
 
         <article class="component">
+          <h3 id="button-primary" class="component__name">.button--primary</h3>
           <div class="component__img">
             <img srcset="img/hero__button.png 2x" src="img/hero__button.png" alt="hero button"> 
           </div>
@@ -183,9 +180,8 @@
           </div>
         </article>
 
-        <h3 id="button-secondary" class="component__name">.button--secondary</h3>
-
         <article class="component">
+          <h3 id="button-secondary" class="component__name">.button--secondary</h3>
           <div class="component__img">
             <img srcset="img/exclusives__button.png 2x" src="img/exclusives__button.png" alt="secondary button">
           </div>
@@ -194,48 +190,44 @@
           </div>
         </article>   
         
-        <h3 id="carousel-button" class="component__name">.carousel__button</h3>
-
         <article class="component">
+          <h3 id="carousel-button" class="component__name">.carousel__button</h3>
           <div class="component__img">
             <img srcset="img/exclusives__button-carousel.png 2x" src="img/exclusives__button-carousel.png" alt="carousel buttons">
           </div>
           <div class="component__code">
-            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg"></a>
-            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg"></a>
+            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg" alt="left arrow"></a>
+            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg" alt="right arrow"></a>
           </div>
         </article>
 
-        <h3 id="carousel-button-circle" class="component__name">.carousel__button--circle</h3>
-
         <article class="component">
+          <h3 id="carousel-button-circle" class="component__name">.carousel__button--circle</h3>
           <div class="component__img">
             <img srcset="img/hero__button--carousel.png 2x" src="img/hero__button--carousel.png" alt="circle carousel buttons">
           </div>
           <div class="component__code">
-            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg"></a>
-            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg"></a>
+            <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg" alt="left arrow"></a>
+            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg" alt="right arrow"></a>
           </div>
         </article>
 
-        <h3 id="icon-square" class="component__name">.icon--square</h3>
-
         <article class="component">
+          <h3 id="icon-square" class="component__name">.icon--square</h3>
           <div class="component__img">
             <img srcset="img/lab__link--tiktok.png 2x" src="img/lab__link--tiktok.png" alt="tiktok icon">
           </div>
           <div class="component__code">
-            <a href="#!"><img srcset="img/tiktok-square.svg" class="icon--square" src="img/tiktok-square.svg"></a>
+            <a href="#!"><img srcset="img/tiktok-square.svg" class="icon--square" src="img/tiktok-square.svg" alt="tiktok icon"></a>
           </div>
         </article>
       </section>
-  <!---- nav-bar ----> 
+  <!-- nav-bar --> 
       <section id="nav-bar" class="page-section">
         <h2 class="component__heading">nav-bar</h2>
 
-        <h3 class="component__name">.nav-bar</h3>
-
         <article class="component">
+          <h3 class="component__name">.nav-bar</h3>
           <div class="component__img">
             <img srcset="img/nav-bar.png 2x" src="img/nav-bar.png" alt="nav bar">  
           </div>
@@ -252,16 +244,15 @@
               <nav>
                 <ul class="nav-bar__list--right">
                   <li class="nav-bar__item"><a href="#!">Sign In</a></li>
-                  <a href="#!" class="button button">Order</a>
+                  <li class="nav-bar__item"><a href="#!" class="button button">Order</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </article>
 
-        <h3 id="nav-bar-list" class="component__name">.nav-bar__list</h3>
-
         <article class="component">
+          <h3 id="nav-bar-list" class="component__name">.nav-bar__list</h3>
           <div class="component__img">
             <img srcset="img/nav-bar__list--left.png 2x" src="img/nav-bar__list--left.png" alt="nav list">  
           </div>
@@ -276,9 +267,8 @@
           </div>
         </article>
 
-        <h3 id="nav-bar-wordmark" class="component__name">.nav-bar__wordmark</h3>
-
         <article class="component">
+          <h3 id="nav-bar-wordmark" class="component__name">.nav-bar__wordmark</h3>
           <div class="component__img">
             <img srcset="img/nav-bar__wordmark.png 2x" src="img/nav-bar__wordmark.png" alt="nav logo">  
           </div>
@@ -287,13 +277,12 @@
           </div>
         </article>
       </section>
-  <!---- hero section ---->  
+  <!-- hero section -->  
       <section id="hero" class="page-section">
         <h2 class="component__heading">hero section</h2>
 
-        <h3 id="hero-section" class="component__name">.hero-section</h3>
-
         <article class="component">
+          <h3 id="hero-section" class="component__name">.hero-section</h3>
           <div class="component__img">
             <img srcset="img/hero.png 2x" src="img/hero.png" alt="hero section">  
           </div>
@@ -307,20 +296,81 @@
               <a href="#!" class="button button--primary">Order Now <span class="transform-arrow">&#8594;</span></a>
             </div>
             <div class="hero__carousel--buttons">
-              <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg"></a>
-            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg"></a>
+              <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg" alt="left arrow"></a>
+            <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg" alt="right arrow"></a>
             </div>
           </div>
         </article>
       </section> 
-  <!---- menu-card ---->
+  <!-- menu-card -->
       <section id="menu-card" class="page-section">
 
         <h2 class="component__heading">menu card</h2>
 
-        <h3 class="component__name">.menu-card</h3>
+        <article class="component">
+          <h3 id="menu-card-tag-left" class="component__name">.menu-card__tag--p</h3>
+          <div class="component__img">
+            <img srcset="img/menu-card__tag--left.png 2x" src="img/menu-card__tag--left.png" alt="menu card tag left">  
+          </div>
+          <div class="component__code">
+            <div>
+             <p class="menu-card__tag--left">Popular</p>
+            </div>
+          </div>
+        </article>
 
         <article class="component">
+          <h3 id="menu-card-tag-right" class="component__name">.menu-card__tag--g</h3>
+          <div class="component__img">
+            <img srcset="img/menu-card__tag--right.png 2x" src="img/menu-card__tag--right.png" alt="menu card tag right">  
+          </div>
+          <div class="component__code">
+            <div>
+             <p class="menu-card__tag--right">G</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="component">
+          <h3 id="menu-card-img-p" class="component__name">.menu-card__img--p</h3>
+          <div class="component__img">
+            <img srcset="img/menu-card__img--p.png 2x" src="img/menu-card__img--p.png" alt="menu card image">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container-p">
+              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+            </div>
+          </div>
+        </article>
+
+        <article class="component">
+          <h3 id="menu-card-img-g" class="component__name">.menu-card__img--g</h3>
+          <div class="component__img">
+            <img srcset="img/menu-card__img--g.png 2.5x" src="img/menu-card__img--g.png" alt="menu card image">  
+          </div>
+          <div class="component__code">
+            <div class="menu-card__container-g">
+              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
+            </div>
+          </div>
+        </article>
+
+        <article class="component">
+          <h3 id="menu-card-content" class="component__name">.menu-card__content</h3>
+          <div class="component__img">
+            <img srcset="img/menu-card__content.png 2x" src="img/menu-card__content.png" alt="menu card content">  
+          </div>
+          <div class="component__code">
+            <div>
+              <h2 class="menu-card__heading">Kale Caesar</h2>
+              <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+              <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="component">
+          <h3 id="menu-card-complete" class="component__name">.menu-card</h3>
           <div class="component__img">
             <img srcset="img/menu-card.png 2x" src="img/menu-card.png" alt="menu card">  
           </div>
@@ -334,76 +384,8 @@
           </div>
         </article>
 
-        <h3 id="menu-card-img-p" class="component__name">.menu-card__img--p</h3>
-
         <article class="component">
-          <div class="component__img">
-            <img srcset="img/menu-card__img--p.png 2x" src="img/menu-card__img--p.png" alt="menu card image">  
-          </div>
-          <div class="component__code">
-            <div class="menu-card__container-p">
-              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
-            </div>
-          </div>
-        </article>
-
-        <h3 id="menu-card-img-g" class="component__name">.menu-card__img--g</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/menu-card__img--g.png 2.5x" src="img/menu-card__img--g.png" alt="menu card image">  
-          </div>
-          <div class="component__code">
-            <div class="menu-card__container-g">
-              <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
-            </div>
-          </div>
-        </article>
-
-        <h3 id="menu-card-content" class="component__name">.menu-card__content</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/menu-card__content.png 2x" src="img/menu-card__content.png" alt="menu card content">  
-          </div>
-          <div class="component__code">
-            <div>
-              <h2 class="menu-card__heading">Kale Caesar</h2>
-              <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
-              <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
-            </div>
-          </div>
-        </article>
-
-        <h3 id="menu-card-tag-left" class="component__name">.menu-card__tag--p</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/menu-card__tag--left.png 2x" src="img/menu-card__tag--left.png" alt="menu card tag left">  
-          </div>
-          <div class="component__code">
-            <div>
-             <p class="menu-card__tag--left">Popular</p>
-            </div>
-          </div>
-        </article>
-
-        <h3 id="menu-card-tag-right" class="component__name">.menu-card__tag--g</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/menu-card__tag--right.png 2x" src="img/menu-card__tag--right.png" alt="menu card tag right">  
-          </div>
-          <div class="component__code">
-            <div>
-             <p class="menu-card__tag--right">G</p>
-            </div>
-          </div>
-        </article>
-
-        <h3 id="menu-card-section" class="component__name">.menu-card-section</h3>
-
-        <article class="component">
+          <h3 id="menu-card-section" class="component__name">.menu-card__section</h3>
           <div class="component__img">
             <img srcset="img/menu.png 2x" src="img/menu.png" alt="hero section">  
           </div>
@@ -441,13 +423,39 @@
         </article>
 
       </section>
-  <!---- latest-card ---->
+  <!-- latest-card -->
       <section id="latest-card" class="page-section">
         <h2 class="component__heading">latest card</h2>
 
-        <h3 class="component__name">.latest-card</h3>
+        <article class="component">
+          <h3 id="latest-card-img" class="component__name">.latest-card__img</h3>
+          <div class="component__img">
+            <img srcset="img/latest-card__img.png 2x" src="img/latest-card__img.png" alt="latest card image">  
+          </div>
+          <div class="component__code">
+            <div class="latest-card__img-container">
+              <img class="latest-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5OpJOQ3GY07jP9xxGih9Uy/87a2b0e565342cf90857236957938f3c/in-the-news-01-V3.png?fm=jpg&fl=progressive&fit=crop&f=faces&w=360&h=360&q=75" alt="naomi osaka">
+            </div>
+          </div>
+        </article>
 
         <article class="component">
+          <h3 id="latest-card-content" class="component__name">.latest-card__content</h3>
+          <div class="component__img">
+            <img srcset="img/latest-card__content.png 2x" src="img/latest-card__content.png" alt="latest card content">  
+          </div>
+          <div class="component__code">
+            <div class="latest-card__content">
+              <h2 class="latest-card__heading">Good Morning America</h2>
+              <h4 class="latest-card__subheading">Naomi Osaka joins sweetgreen as youngest investor</h4>
+              <p class="latest-card__desc">Discover what our collab means for the future of fast food...</p>
+              <a class="latest-card__link" href="#!">Read more <span>&#8594;</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="component">
+          <h3 class="component__name">.latest-card</h3>
           <div class="component__img">
             <img srcset="img/latest-card.png 2x" src="img/latest-card.png" alt="latest card">  
           </div>
@@ -463,43 +471,13 @@
             </div>
           </div>
         </article>
-
-        <h3 id="latest-card-img" class="component__name">.latest-card__img</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/latest-card__img.png 2x" src="img/latest-card__img.png" alt="latest card image">  
-          </div>
-          <div class="component__code">
-            <div class="latest-card__img-container">
-              <img class="latest-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5OpJOQ3GY07jP9xxGih9Uy/87a2b0e565342cf90857236957938f3c/in-the-news-01-V3.png?fm=jpg&fl=progressive&fit=crop&f=faces&w=360&h=360&q=75" alt="naomi osaka">
-            </div>
-          </div>
-        </article>
-
-        <h3 id="latest-card-content" class="component__name">.latest-card__content</h3>
-
-        <article class="component">
-          <div class="component__img">
-            <img srcset="img/latest-card__content.png 2x" src="img/latest-card__content.png" alt="latest card content">  
-          </div>
-          <div class="component__code">
-            <div class="latest-card__content">
-              <h2 class="latest-card__heading">Good Morning America</h2>
-              <h4 class="latest-card__subheading">Naomi Osaka joins sweetgreen as youngest investor</h4>
-              <p class="latest-card__desc">Discover what our collab means for the future of fast food...</p>
-              <a class="latest-card__link" href="#!">Read more <span>&#8594;</span></a>
-            </div>
-          </div>
-        </article>
       </section>
-  <!---- newsletter ---->
+  <!-- newsletter -->
       <section id="newsletter-form" class="page-section">
         <h2 class="component__heading">newsletter</h2>
 
-        <h3 class="component__name">.newsletter__form</h3>
-
         <article class="component">
+          <h3 class="component__name">.newsletter__form</h3>
           <div class="component__img">
             <img srcset="img/newsletter__form.png 2x" src="img/newsletter__form.png" alt="newsletter form">  
           </div>
@@ -511,13 +489,12 @@
           </div>
         </article>
       </section>
-  <!---- footer ---->  
+  <!-- footer -->  
       <section id="footer" class="page-section">
         <h2 class="component__heading">footer</h2>
 
-        <h3 id="footer-marquee" class="component__name">.footer__marquee</h3>
-
         <article class="component">
+          <h3 id="footer-marquee" class="component__name">.footer__marquee</h3>
           <div class="component__img">
             <img srcset="img/footer__marquee.png 2x" src="img/footer__marquee.png" alt="footer marquee">  
           </div>
@@ -528,9 +505,8 @@
           </div>
         </article>
 
-        <h3 id="footer-nav-list" class="component__name">.footer__nav-list</h3>
-
         <article class="component">
+          <h3 id="footer-nav-list" class="component__name">.footer__nav-list</h3>
           <div class="component__img">
             <img srcset="img/footer-nav__list.png 2x" src="img/footer-nav__list.png" alt="footer nav list">  
           </div>
