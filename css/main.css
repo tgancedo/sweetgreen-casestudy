@@ -468,7 +468,6 @@ a:hover .transform-arrow {
   grid-template-columns: 1fr 1fr;
   padding: 40px;
   height: 100vh;
-
 }
 
 .app-section__content {
@@ -601,6 +600,47 @@ a:hover .transform-arrow {
       flex-basis: 100%;
       margin: 1rem;
   }
+}
+
+/*------------ exclusives section ------------*/
+
+.exclusives-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
+  background: var(--light-sage);
+}
+
+.exclusives-section-container {
+  background: var(--light-sage);
+  padding: 40px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exclusives-section__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+}
+
+#exclusives-section__button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.exclusives-section__img {
+  align-self: flex-end;
+}
+
+.exclusives-section__img img{
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+  border-radius: 1.3rem;
 }
 
 /*------------ newsletter ------------*/
