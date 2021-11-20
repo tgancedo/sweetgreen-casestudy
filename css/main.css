@@ -178,6 +178,9 @@ a:hover .transform-arrow {
   width: 29px;
   height: 29px;
   color: var(--black);
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 /*------------ .component ------------*/
@@ -584,6 +587,7 @@ a:hover .transform-arrow {
 
 #latest-header-link {
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .latest-section-cards {
@@ -618,6 +622,7 @@ a:hover .transform-arrow {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
 
 .exclusives-section__content {
@@ -642,6 +647,45 @@ a:hover .transform-arrow {
   object-fit: contain;
   border-radius: 1.3rem;
 }
+
+/*------------ lab section ------------*/
+
+.lab-section-container {
+  background: var(--tan);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lab-section__content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  column-gap: 2rem;
+}
+
+.lab-p {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.lab-link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-top: auto;
+  text-underline-offset: 0.125rem;
+}
+
+.lab-section__video video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /*------------ newsletter ------------*/
 
