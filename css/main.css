@@ -715,14 +715,14 @@ a:hover .transform-arrow {
   padding: .6rem;
 }
 
-#email {
+.email {
   flex: 1;
   font-size: 1.2rem;
   border: none;
   background: none;
 }
 
-#submit-arrow {
+.submit-arrow {
   border: none;
   background: none;
   cursor:pointer;
@@ -732,7 +732,7 @@ input::placeholder{
   color: var(--black);
 }
 
-#email:focus{
+.email:focus{
   outline: none;
   background: var(--light-sage);
 }
