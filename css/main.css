@@ -434,7 +434,7 @@ a:hover .transform-arrow {
 }
 
 .menu-card__link {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .menu-card__tag--left {
@@ -455,11 +455,14 @@ a:hover .transform-arrow {
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 768px) and (min-width: 320px){
+@media screen and (max-width: 700px) {
   .menu__content {
       display: block;
       justify-content: center;
       flex-basis: 100%;
+  }
+  .menu-card__container-g, .menu-card__container-p {
+    margin: 1rem 0;
   }
 }
 
@@ -501,6 +504,16 @@ a:hover .transform-arrow {
   width: 100%;
   height: 100%; 
   object-fit: contain;
+}
+
+@media screen and (max-width: 700px) {
+  .app-section__content {
+    width: 300px;
+    display: block;
+  }
+  .app-section__img img{
+    max-width: 100%;
+  }
 }
 
 /*------------ latest card ------------*/
@@ -597,12 +610,10 @@ a:hover .transform-arrow {
   justify-content: center;
 }
 
-@media only screen and (max-width: 768px) and (min-width: 320px){
+@media screen and (max-width: 700px) {
   .latest-section-cards {
       display: block;
-      justify-content: center;
-      flex-basis: 100%;
-      margin: 1rem;
+      width: 300px;
   }
 }
 
@@ -648,6 +659,12 @@ a:hover .transform-arrow {
   border-radius: 1.3rem;
 }
 
+@media screen and (max-width: 700px) {
+  .exclusives-section__content {
+    width: 300px;
+  }
+}
+
 /*------------ lab section ------------*/
 
 .lab-section-container {
@@ -687,7 +704,7 @@ a:hover .transform-arrow {
 }
 
 
-/*------------ newsletter ------------*/
+/*------------ newsletter and download------------*/
 
 .flex-container {
   display: flex;
@@ -726,6 +743,7 @@ input::placeholder{
 .newsletter__container {
   background: var(--cream);
   padding: 40px;
+  border-right: 1px solid var(--black);
 }
 
 .newsletter__h2 {
@@ -739,11 +757,27 @@ input::placeholder{
   justify-content: space-between;
 }
 
-.download-illustration img{
+.download__content {
+  margin: 0;
+}
+
+.download-illustration {
+  margin: 0;
+}
+
+.download-illustration img {
   max-width: 100%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.newsletter-download__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--black);
 }
 
 /*------------ footer marquee ------------*/
