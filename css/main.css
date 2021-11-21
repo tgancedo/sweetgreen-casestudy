@@ -784,11 +784,12 @@ input::placeholder{
 /*------------ footer marquee ------------*/
 
 .marquee {
-  height: 50px;
+  height: 70px;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
   width: 100%;
+  background: var(--sage);
 }
 
 .marquee h3 {
@@ -836,8 +837,10 @@ input::placeholder{
 
 /*------------ footer ------------*/
 
-.footer__container {
+.footer__nav-container {
   display: flex;
+  background: var(--sage);
+  padding: 40px;
 }
 
 .footer__nav-list ul {
