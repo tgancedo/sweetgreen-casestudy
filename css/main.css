@@ -41,6 +41,7 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0;
+  line-height: 1.2rem;
 }
 
 h3 {
@@ -835,10 +836,26 @@ input::placeholder{
 
 /*------------ footer ------------*/
 
+.footer__container {
+  display: flex;
+}
+
 .footer__nav-list ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
   font-size: 1rem;
   line-height: 1.3rem;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  text-align: right;
+  line-height: 1rem;
 }
