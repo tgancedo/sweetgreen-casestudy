@@ -41,7 +41,7 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
 }
 
 h3 {
@@ -352,7 +352,7 @@ a:hover .transform-arrow {
 /*------------ menu card ------------*/
 
 .menu-card__container-p {
-  width: 340px;
+  width: 100%;
   position: relative;
 }
 
@@ -360,6 +360,7 @@ a:hover .transform-arrow {
   display: flex;
   background: var(--cream);
   justify-content: center;
+  padding-top: 1rem;
 }
 
 .menu__heading ul {
@@ -376,7 +377,7 @@ a:hover .transform-arrow {
   display: flex;
   column-gap: 1.5rem;
   background: var(--cream);
-  padding: 1.5rem;
+  padding: 2rem;
   justify-content: center;
 }
 
@@ -404,7 +405,7 @@ a:hover .transform-arrow {
 }
 
 .menu-card__container-g {
-  width: 340px;
+  width: 100%;
   position: relative;
 }
 
