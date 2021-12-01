@@ -554,6 +554,7 @@ a:hover .transform-arrow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  transition: all .3s ease-in-out;
 }
 
 .latest-card__container:hover {
@@ -612,7 +613,7 @@ a:hover .transform-arrow {
 
 .latest-section-container {
   background: var(--cream);
-  padding: 40px;
+  padding: 70px 40px;
 }
 
 .latest-section-header {
