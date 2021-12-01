@@ -694,6 +694,12 @@ a:hover .transform-arrow {
   .exclusives-section__content {
     width: 300px;
   }
+  .exclusives-section-container {
+    display: block;
+  }
+  .exclusives-section__img {
+    margin: 2rem auto;
+  }
 }
 
 /*------------ lab section ------------*/
