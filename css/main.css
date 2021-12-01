@@ -643,6 +643,9 @@ a:hover .transform-arrow {
       display: block;
       width: 300px;
   }
+  .latest-card__container {
+    margin: 1rem auto;
+  }
 }
 
 /*------------ exclusives section ------------*/
