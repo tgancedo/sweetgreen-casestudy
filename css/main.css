@@ -741,6 +741,11 @@ a:hover .transform-arrow {
   object-fit: cover;
 }
 
+@media screen and (max-width: 700px) {
+  .lab-section-container {
+    display: block;
+  }
+}
 
 /*------------ newsletter and download------------*/
 
