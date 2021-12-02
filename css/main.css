@@ -544,7 +544,7 @@ a:hover .transform-arrow {
   .app-section__content {
     width: 300px;
   }
-  .app-section-container {
+  .app-section__container {
     display: block;
     height: 115vh;
   }
