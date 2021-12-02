@@ -850,6 +850,7 @@ input::placeholder{
   white-space: nowrap;
   width: 100%;
   background: var(--sage);
+  padding-top: 1rem;
 }
 
 .marquee h3 {
@@ -921,4 +922,16 @@ input::placeholder{
   font-size: 1rem;
   text-align: right;
   line-height: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__nav-container {
+    display: block;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
 }
