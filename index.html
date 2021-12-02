@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <div class="nav-bar__container">
+  <header class="nav-bar__container">
     <nav>
       <ul class="nav-bar__list--left">
         <li class="nav-bar__item"><a href="#!">Our Menu</a></li>
@@ -26,9 +26,9 @@
         <li class="nav-bar__item"><a href="#!" class="button button">Order</a></li>
       </ul>
     </nav>
-  </div>
+  </header>
 
-  <div class="hero__container">
+  <section class="hero__container">
     <div class="hero__img">
       <img src="https://images.ctfassets.net/eum7w7yri3zr/1NJ7fLOE7LOWaTaC3R9ZwO/3f33bfc0a796aff567cd2ab64a207a51/S5-2021-banner-homepage-desktop.jpg?w=1600&q=75&fm=jpg&fl=progressive" alt="hero image">
     </div>
@@ -41,39 +41,42 @@
       <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button--circle" src="img/left-arrow.svg" alt="left arrow"></a>
       <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button--circle" src="img/right-arrow.svg" alt="right arrow"></a>
     </div>
-  </div>
+  </section>
  
-  <div class="menu__heading">
-    <nav>
-      <ul>
-        <li><a href="#!">Salads</a></li>
-        <li><a href="#!">Warm Bowls</a></li>
-        <li><a href="#!">Sides</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="menu__content">
-    <div class="menu-card__container-p">
-      <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
-      <h2 class="menu-card__heading">Kale Caesar</h2>
-      <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+  <section class="menu__container">
+    <div class="menu__heading">
+      <h2 class="hidden">Menu Nav</h2>
+      <nav>
+        <ul>
+          <li><a href="#!">Salads</a></li>
+          <li><a href="#!">Warm Bowls</a></li>
+          <li><a href="#!">Sides</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu__content">
+      <article class="menu-card__container-p">
+        <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/5418ra5b4TcMHRxOIobxUx/f2856061ea0d30caf9df0eb42136428c/Product_Carousel-Kale_Caesar.jpg?w=600&q=75" alt="kale caesar">
+        <h2 class="menu-card__heading">Kale Caesar</h2>
+        <p class="menu-card__desc">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing</p>
+        <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+      </article>
+      <article class="menu-card__container-p">
+        <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/3Z3fW9JhznhFDphzlHNmRx/85e7f5e3a7e92d63e5fec70e0336b899/Product_Carousel-Guacamole_Greens.jpg?w=600&q=75" alt="guacamole greens">
+        <h2 class="menu-card__heading">Guacamole Greens</h2>
+        <p class="menu-card__desc">Roasted chicken, avocado, tomatoes, red onions, shredded cabbage, tortilla chips, spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño vinaigrette</p>
+        <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+      </article>
+      <article class="menu-card__container-g">
+      <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
+      <h2 class="menu-card__heading">Buffalo Chicken Bowl</h2>
+      <p class="menu-card__desc">Blackened chicken, pickled carrots + celery, tomatoes, cilantro, blue cheese, za'atar breadcrumbs, shredded kale, chopped romaine, sweetgreen hot sauce, caesar dressing (contains gluten)</p>
       <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
+      </article>
     </div>
-    <div class="menu-card__container-p">
-      <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/3Z3fW9JhznhFDphzlHNmRx/85e7f5e3a7e92d63e5fec70e0336b899/Product_Carousel-Guacamole_Greens.jpg?w=600&q=75" alt="guacamole greens">
-      <h2 class="menu-card__heading">Guacamole Greens</h2>
-      <p class="menu-card__desc">Roasted chicken, avocado, tomatoes, red onions, shredded cabbage, tortilla chips, spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño vinaigrette</p>
-      <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
-    </div>
-    <div class="menu-card__container-g">
-    <img class="menu-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/d5b3PRm5FskiI0zYIM8Nj/6ac1736ca482f50a46cd073b65c4c759/Product_Carousel-Buffalo_Chicken_Bowls.jpg?w=600&q=75" alt="buffalo chicken bowl">
-    <h2 class="menu-card__heading">Buffalo Chicken Bowl</h2>
-    <p class="menu-card__desc">Blackened chicken, pickled carrots + celery, tomatoes, cilantro, blue cheese, za'atar breadcrumbs, shredded kale, chopped romaine, sweetgreen hot sauce, caesar dressing (contains gluten)</p>
-    <a class="menu-card__link" href="#!">Order now <span class="transform-arrow">&#8594;</span></a>
-    </div>
-  </div>
+  </section>
 
-  <div class="app-section-container">
+  <section class="app-section__container">
     <div class="app-section__content">
       <h2>Inside the App</h2>
       <h3>Explore our new sweetgreen app</h3>
@@ -83,13 +86,12 @@
         Tap in to eat with the seasons, explore new flavors, and find the sweet spot between good-for-you and just-plain-good.</p>
       <a id="app-section__button" href="#!" class="button button--primary">Download the App</a>
     </div>
-    
     <div class="app-section__img">
       <img src="https://images.ctfassets.net/eum7w7yri3zr/1gVMoBGHoPIo2WNOFhYMYg/9304e13ca32b051638f26ccb65358782/Download_App-1x.png?w=1200&q=75" alt="sweetgreen app">
     </div>
-  </div>
+  </section>
 
-  <div class="latest-section-container">
+  <section class="latest-section__container">
     <div class="latest-section-header">
       <h2 class="latest-header">The Latest</h2>
       <a id="latest-header-link" class="action-link" href="#!">Read More<span class="transform-arrow">&#8594;</span></a>
@@ -123,34 +125,35 @@
         <img class="latest-card__img" src="https://images.ctfassets.net/eum7w7yri3zr/1DeCfXyhsXGMnVbYEZoN0F/a2f182f721c8d036de537d7f15d28ea0/in-the-news-03-V2.png?fm=jpg&fl=progressive&fit=crop&f=faces&w=360&h=360&q=75" alt="sweetgreen restaurant">
       </article>
     </div>
-  </div>
+  </section>
 
-  <div class="exclusives-section-header">
-    <h2 class="exclusives-header">Sweetgreen exclusives</h2>
-    <div class="exclusives-arrows">
-      <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg" alt="left arrow"></a>
-      <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg" alt="right arrow"></a>
-    </div>
-  </div>
+  <section class="exclulsives-section__container">
+    <h2 class="hidden">sweetgreen exclusives</h2>
+    <article class="exclusives-section-header__container">
+      <h2 class="exclusives-header">sweetgreen exclusives</h2>
+      <div class="exclusives-arrows">
+        <a href="#!"><img srcset="img/left-arrow.svg" class="button carousel__button" src="img/left-arrow.svg" alt="left arrow"></a>
+        <a href="#!"><img srcset="img/right-arrow.svg" class="button carousel__button" src="img/right-arrow.svg" alt="right arrow"></a>
+      </div>
+    </article>
+    <article class="exclusives-section-content__container">
+      <div class="exclusives-section-content">
+        <h3>Dive into the fan favorites</h3>
+        <p class="first-p">
+          Ordered often and always a hit, these popular picks are true sweetgreen staples.
+        </p>
+        <p class="second-p">
+          This collection includes the Harvest Bowl, Kale Caesar, Gaucamole Greens, Chicken Pesto Parm, and Hot Honey chicken plate.
+        </p>
+        <a id="exclusives-section__button" href="#!" class="button button--secondary">Order Now</a>
+      </div>
+      <div class="exclusives-section__img">
+        <img src="https://images.ctfassets.net/eum7w7yri3zr/7C0UGrEDsHX16wSBPLRYDH/7a142df84cd81f9ce6f73599d3ad0195/collections-popular.png?w=1200&q=&fm=jpg&fl=progressive" alt="kale caesar in a farm">
+      </div>
+    </article>
+  </section>
 
-  <div class="exclusives-section-container">
-    <div class="exclusives-section__content">
-      <h3>Dive into the fan favorites</h3>
-      <p class="first-p">
-        Ordered often and always a hit, these popular picks are true sweetgreen staples.
-      </p>
-      <p class="second-p">
-        This collection includes the Harvest Bowl, Kale Caesar, Gaucamole Greens, Chicken Pesto Parm, and Hot Honey chicken plate.
-      </p>
-      <a id="exclusives-section__button" href="#!" class="button button--secondary">Order Now</a>
-    </div>
-
-    <div class="exclusives-section__img">
-      <img src="https://images.ctfassets.net/eum7w7yri3zr/7C0UGrEDsHX16wSBPLRYDH/7a142df84cd81f9ce6f73599d3ad0195/collections-popular.png?w=1200&q=&fm=jpg&fl=progressive" alt="kale caesar in a farm">
-    </div>
-  </div>
-
-  <div class="lab-section-container">
+  <section class="lab-section__container">
     <div class="lab-section__content">
       <h2>In the Lab</h2>
       <h3>Step inside the sweetgreen kitchen</h3>
@@ -159,12 +162,12 @@
       </p>
       <a class="lab-link" href="#!"><img srcset="img/tiktok-square.svg" class="icon--square" src="img/tiktok-square.svg" alt="tiktok icon">Follow along <span class="transform-arrow">&#8594;</span></a> 
     </div>
-
     <div class="lab-section__video">
       <video autoplay loop muted>
         <source src="https://videos.ctfassets.net/eum7w7yri3zr/tqIHrYka4VTGHFGLxYAvw/77e467dc040d075950bc9cc65d0719d1/Spicy_Cashew_Recipe.mov">
       </video>
     </div>
-  </div>
+  </section>
+
 </body>
 </html>

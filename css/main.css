@@ -399,6 +399,12 @@ a:hover .transform-arrow {
   padding: 1rem;
 }
 
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .menu__content {
   display: flex;
   column-gap: 1.5rem;
@@ -495,7 +501,7 @@ a:hover .transform-arrow {
 }
 
 /*------------ app section ------------*/
-.app-section-container {
+.app-section__container {
   background: var(--sage);
   position: relative;
   display: grid;
@@ -611,7 +617,7 @@ a:hover .transform-arrow {
 
 /*------------ latest section ------------*/
 
-.latest-section-container {
+.latest-section__container {
   background: var(--cream);
   padding: 70px 40px;
 }
@@ -651,7 +657,7 @@ a:hover .transform-arrow {
 
 /*------------ exclusives section ------------*/
 
-.exclusives-section-header {
+.exclusives-section-header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -659,7 +665,7 @@ a:hover .transform-arrow {
   background: var(--light-sage);
 }
 
-.exclusives-section-container {
+.exclusives-section-content__container {
   background: var(--light-sage);
   padding: 40px;
   position: relative;
@@ -668,7 +674,7 @@ a:hover .transform-arrow {
   column-gap: 2rem;
 }
 
-.exclusives-section__content {
+.exclusives-section-content {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -692,10 +698,10 @@ a:hover .transform-arrow {
 }
 
 @media screen and (max-width: 700px) {
-  .exclusives-section__content {
+  .exclusives-section-content {
     width: 300px;
   }
-  .exclusives-section-container {
+  .exclusives-section-content__container {
     display: block;
   }
   .exclusives-section__img {
@@ -705,7 +711,7 @@ a:hover .transform-arrow {
 
 /*------------ lab section ------------*/
 
-.lab-section-container {
+.lab-section__container {
   background: var(--tan);
   position: relative;
   display: grid;
@@ -742,7 +748,7 @@ a:hover .transform-arrow {
 }
 
 @media screen and (max-width: 700px) {
-  .lab-section-container {
+  .lab-section__container {
     display: block;
   }
 }
