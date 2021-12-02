@@ -829,6 +829,18 @@ input::placeholder{
   border-top: 1px solid var(--black);
 }
 
+@media screen and (max-width: 700px) {
+  .newsletter-download__container {
+    display: block;
+  }
+  .download__container {
+    border-top: 1px solid var(--black);
+  }
+  .newsletter__container {
+    border-right: none;
+  }
+}
+
 /*------------ footer marquee ------------*/
 
 .marquee {
