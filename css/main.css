@@ -329,7 +329,7 @@ a:hover .transform-arrow {
   position: relative;
 }
 
-.hero__img {
+.hero__img img{
   width: 100%;
   height: auto;
   object-fit: cover;
