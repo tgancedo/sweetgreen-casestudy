@@ -902,6 +902,7 @@ input::placeholder{
   display: flex;
   background: var(--sage);
   padding: 40px;
+  justify-content: center;
 }
 
 .footer__nav-list ul {
