@@ -904,14 +904,14 @@ input::placeholder {
 
 /*------------ footer ------------*/
 
-.footer__nav-container {
+.footer-nav__container {
   display: flex;
   background: var(--sage);
   padding: 40px;
   justify-content: center;
 }
 
-.footer__nav-list ul {
+.footer-nav__list ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -919,7 +919,7 @@ input::placeholder {
   line-height: 1.3rem;
 }
 
-.footer__nav {
+.footer-nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 2rem;
@@ -932,10 +932,10 @@ input::placeholder {
 }
 
 @media screen and (max-width: 700px) {
-  .footer__nav {
+  .footer-nav {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer__nav-container {
+  .footer-nav__container {
     display: block;
   }
   .footer__copyright {
