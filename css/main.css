@@ -586,7 +586,7 @@ a:hover .transform-arrow {
   object-fit: cover;
 }
 
-.latest-card__img-container {
+.latest-card__img--container {
   width: 200px;
 }
 
@@ -663,7 +663,7 @@ a:hover .transform-arrow {
 
 /*------------ exclusives section ------------*/
 
-.exclusives-section-header__container {
+.exclusives-section__header--container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -671,7 +671,7 @@ a:hover .transform-arrow {
   background: var(--light-sage);
 }
 
-.exclusives-section-content__container {
+.exclusives-section__content--container {
   background: var(--light-sage);
   padding: 40px;
   position: relative;
@@ -680,7 +680,7 @@ a:hover .transform-arrow {
   column-gap: 2rem;
 }
 
-.exclusives-section-content {
+.exclusives-section__content {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -704,10 +704,10 @@ a:hover .transform-arrow {
 }
 
 @media screen and (max-width: 700px) {
-  .exclusives-section-content {
+  .exclusives-section__content {
     width: 300px;
   }
-  .exclusives-section-content__container {
+  .exclusives-section__content--container {
     display: block;
   }
   .exclusives-section__img {
