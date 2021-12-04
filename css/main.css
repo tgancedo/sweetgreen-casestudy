@@ -270,8 +270,12 @@ a:hover .transform-arrow {
     position: relative;
     overflow: hidden;
   }
-  .side-bar__section {display: none;}
-  .component__main {margin-left: 0;}
+  .side-bar__section {
+    display: none;
+  }
+  .component__main {
+    margin-left: 0;
+  }
 }
 
 /*------------ sweetgreen nav-bar ------------*/
@@ -319,8 +323,12 @@ a:hover .transform-arrow {
 }
 
 @media screen and (max-width: 700px) {
-  .nav-bar__item, .nav-bar__list--right, .nav-bar__list--left {display: none;}
-  .wordmark {padding: 1rem;}
+  .nav-bar__item, .nav-bar__list--right, .nav-bar__list--left {
+    display: none;
+  }
+  .wordmark {
+    padding: 1rem;
+  }
 }
 
 /*------------ hero section ------------*/
@@ -418,8 +426,7 @@ a:hover .transform-arrow {
   width: 100%;
 }
 
-.menu-card__container-p:before,
-.menu-card__img:before {
+.menu-card__container-p:before, .menu-card__img:before {
   background: var(--lime);
   border-radius: 2rem;
   font-size: 1rem;
@@ -441,8 +448,7 @@ a:hover .transform-arrow {
   position: relative;
 }
 
-.menu-card__container-g:before,
-.menu-card__img:before {
+.menu-card__container-g:before, .menu-card__img:before {
   border-radius: 50%;
   border: 1px solid var(--black);
   display: inline-block;
