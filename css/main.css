@@ -644,7 +644,7 @@ a:hover .transform-arrow {
   font-size: 1rem;
 }
 
-.latest-section-cards {
+.latest-section__cards {
   display: flex;
   column-gap: 1rem;
   margin-top: 1.5rem;
@@ -652,7 +652,7 @@ a:hover .transform-arrow {
 }
 
 @media screen and (max-width: 700px) {
-  .latest-section-cards {
+  .latest-section__cards {
       display: block;
       width: 300px;
   }
