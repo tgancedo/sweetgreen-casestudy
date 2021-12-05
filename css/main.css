@@ -368,7 +368,7 @@ a:hover .transform-arrow {
     width: 300px;
   }
   .hero__container {
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     height: 100vw;
   }
@@ -779,7 +779,7 @@ a:hover .transform-arrow {
 .submit-arrow {
   border: none;
   background: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 input::placeholder {
